@@ -1,0 +1,31 @@
+[
+    {
+        "id":"01",
+        "images":"/assets/jewelary.webp",
+        "name":"Jewelary"
+    },
+     {
+        "id":"02",
+        "images":"/assets/decorater.webp",
+        "name":"Decorator"
+    },
+     {
+        "id":"03",
+        "images":"/assets/electric.webp",
+        "name":"Headphones"
+    },
+    {     "id":"04",
+        "images":"/assets/home appliance.webp",
+        "name":"Home Appliance"
+    },
+     {
+        "id":"05",
+        "images":"/assets/watch.webp",
+        "name":"Hand Watches"
+    },
+    {
+        "id":"06",
+        "images":"/assets/men-wallet.webp",
+        "name":"Men's Wallet"
+    }
+]

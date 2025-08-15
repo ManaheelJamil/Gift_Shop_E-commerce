@@ -1,0 +1,13 @@
+{
+  "Pages": [
+    { "name": "Services", "link": "/services" },
+    { "name": "Light / Medium", "link": "/light-medium" },
+    { "name": "heavy Duty", "link": "/heavy" },
+    { "name": "Gallery", "link": "/gallery" }
+  ],
+  "Company": [
+    { "name": "About Us", "link": "/about-us" },
+    { "name": "Careers", "link": "/contact-us" },
+    { "name": "Contact", "link": "/contact-us" }
+  ]
+}

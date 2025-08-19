@@ -5,6 +5,7 @@ import MainLayout from "./Layouts/MainLayout";
 import LatestItem from "./pages/latestItem/latestitem"
 import TopRatedItems from "./pages/TopRatedItem/topRatedItem";
 import ProductDetails from "./pages/ProductDetails/productDetails"
+import CategoryDetails from "./pages/Category/category"
 function App() {
   return (
     <BrowserRouter>
@@ -14,6 +15,7 @@ function App() {
           <Route path="/latestitem" element={<LatestItem />} />
           <Route path="/toprateditem" element={<TopRatedItems/>}/>
            <Route path="/products/:id" element={<ProductDetails />} />
+           <Route path="/category/:id" element={<CategoryDetails />} />
 
         </Routes>
       </MainLayout>

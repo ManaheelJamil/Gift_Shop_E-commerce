@@ -10,20 +10,21 @@ function Category() {
       </p>
       <div>
         <div className="flex mt-20 gap-6 justify-center">
-          {CategoryData
-            ? CategoryData.map((item, index) => {
+          {CategoryData.map((item, index) => {
                 return (
-                  <div key={index}>
-                    <img
-                      src={item.images}
-                      alt="cart"
-                      className="w-40 h-40 shadow-xl rounded-full "
-                    />
-                    <h1 className="text-xl mt-5">{item.name}</h1>
-                  </div>
+                  <a href={`/category/${item.id}`}>
+                    <div key={index}>
+                      <img
+                        src={item.images}
+                        alt="cart"
+                        className="w-40 h-40 shadow-xl rounded-full "
+                      />
+                      <h1 className="text-xl mt-5">{item.name}</h1>
+                    </div>
+                  </a>
                 );
               })
-            : "loading....."}
+            }
         </div>
       </div>
     </div>

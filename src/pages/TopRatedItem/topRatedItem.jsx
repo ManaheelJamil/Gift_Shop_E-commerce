@@ -1,12 +1,12 @@
 import React from 'react'
 import {getAllProducts} from "../../services/productServices";
 
-function Latestitem  ()  {
+function TopRatedItems  ()  {
   const products = getAllProducts()
   return (
-    <div className='lg:w-[1440px] mx-5 lg:mx-auto my-20'>
+    <div className='mx-10 my-20'>
          <div>
-          <h1 className="text-5xl mx-auto ">Latest Items</h1>
+          <h1 className="text-5xl mx-auto ">Top Rated Items</h1>
           <p className="mt-3 text-md">
             Explore our collection of unique and thoughtful gifts. Perfect for
             every occasion and every special someone.
@@ -33,4 +33,4 @@ function Latestitem  ()  {
   )
 }
 
-export default Latestitem
+export default TopRatedItems

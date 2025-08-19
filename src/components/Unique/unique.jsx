@@ -1,6 +1,9 @@
 import React from "react";
-import LatestData from "../../data/latestData.json";
+import { getAllProducts } from "../../services/productServices";
 function Unique() {
+  const products = getAllProducts();
+  const latestData = products.slice(-5);
+  console.log(latestData, "array");
   return (
     <>
       <div className="flex justify-between">
@@ -18,21 +21,19 @@ function Unique() {
           </button>
         </a>
       </div>
-      <div className="flex mt-20 gap-6 justify-center">
-        {LatestData
-          ? LatestData.map((item, index) => {
-              return (
-                <div key={index}>
-                  <img
-                    src={item.images}
-                    alt="cart"
-                    className="w-72 h-64 shadow-xl rounded-md "
-                  />
-                  <h1 className="text-xl mt-5">{item.name}</h1>
-                </div>
-              );
-            })
-          : "loading....."}
+      <div className="grid grid-cols-3 mt-20 gap-6 justify-center">
+        {latestData.map((item, index) => {
+          return (
+            <div key={index}>
+              <img
+                src={item.image}
+                alt="cart"
+                className="w-72 h-64 shadow-xl rounded-md "
+              />
+              <h1 className="text-xl mt-5">{item.name}</h1>
+            </div>
+          );
+        })}
       </div>
     </>
   );

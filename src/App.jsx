@@ -6,8 +6,11 @@ import LatestItem from "./pages/latestItem/latestitem"
 import TopRatedItems from "./pages/TopRatedItem/topRatedItem";
 import ProductDetails from "./pages/ProductDetails/productDetails"
 import CategoryDetails from "./pages/Category/category"
+import { CartProvider } from "./context/CartContext";
+import CartDetail from "./pages/CartDetail/cartDetail";
 function App() {
   return (
+    <CartProvider>
     <BrowserRouter>
       <MainLayout>
         <Routes>
@@ -16,10 +19,12 @@ function App() {
           <Route path="/toprateditem" element={<TopRatedItems/>}/>
            <Route path="/products/:id" element={<ProductDetails />} />
            <Route path="/category/:id" element={<CategoryDetails />} />
+           <Route path="/cart" element={<CartDetail />} />
 
         </Routes>
       </MainLayout>
     </BrowserRouter>
+    </CartProvider>
   );
 }
 

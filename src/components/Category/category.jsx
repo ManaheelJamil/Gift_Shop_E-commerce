@@ -1,5 +1,6 @@
 import React from "react";
 import CategoryData from "../../data/category.json";
+import { Link } from "react-router-dom";
 function Category() {
   return (
     <div className="lg:my-40 my-20 text-center">
@@ -12,7 +13,7 @@ function Category() {
         <div className="flex  flex-wrap mt-20 gap-6 justify-center">
           {CategoryData.map((item, index) => {
                 return (
-                  <a href={`/category/${item.id}`}>
+                  <Link to={`/category/${item.id}`}>
                     <div key={index}>
                       <img
                         src={item.images}
@@ -21,7 +22,7 @@ function Category() {
                       />
                       <h1 className="text-lg text-[#444444] mt-5">{item.name}</h1>
                     </div>
-                  </a>
+                  </Link>
                 );
               })
             }

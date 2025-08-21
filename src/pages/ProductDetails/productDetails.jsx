@@ -4,11 +4,14 @@ import { FaPlus } from "react-icons/fa6";
 import { FaMinus } from "react-icons/fa6";
 import { useState } from "react";
 import Unique from "../../components/Unique/unique";
+import { useCart } from "../../context/CartContext";
+import { Link } from "react-router-dom";
 function ProductDetails() {
   const [count, setCount] = useState(0);
   const { id } = useParams();
   const products = getAllProducts();
   const product = products.find((p) => p.id === id);
+  const { addToCart } = useCart();
 
   if (!product) {
     return <h2 className="text-red-500">Product not found</h2>;
@@ -41,7 +44,10 @@ function ProductDetails() {
             </span>
           ))}
           <div className="flex items-center mt-12 gap-5">
-            <button className="bg-[#444444] cursor-pointer p-2 shadow-md w-40 rounded-md text-white">
+            <button
+              onClick={() => addToCart(product)}
+              className="bg-[#444444] cursor-pointer p-2 shadow-md w-40 rounded-md text-white"
+            >
               Add to Cart
             </button>
             <div className="flex items-center gap-2 bg-white shadow-md border border-[#444444] p-2 rounded-md w-32  justify-between">
@@ -59,9 +65,11 @@ function ProductDetails() {
                 <FaMinus />
               </button>
             </div>
-            <button className="bg-[#444444] cursor-pointer  p-2 shadow-md w-40 rounded-md text-white">
-              Order Now{" "}
-            </button>
+              <button className="bg-[#444444] cursor-pointer  p-2 shadow-md w-40 rounded-md text-white">
+            <Link to="/cart">
+                Order Now{" "}
+            </Link>
+              </button>
           </div>
         </div>
       </div>

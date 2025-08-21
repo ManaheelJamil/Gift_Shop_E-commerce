@@ -1,5 +1,6 @@
 import React from "react";
 import { getAllProducts } from "../../services/productServices";
+import { Link } from "react-router-dom";
 function Unique() {
   const products = getAllProducts();
   const latestData = products.slice(-5);
@@ -14,12 +15,12 @@ function Unique() {
             every occasion and every special someone.
           </p>
         </div>
-        <a href="/latestitem">
+        <Link to="/latestitem">
           {" "}
           <button className="text-sm lg:text-md cursor-pointer bg-gray-900 text-white rounded-md lg:w-28 w-20 text-center h-10 lg:h-12">
             View All
           </button>
-        </a>
+        </Link>
       </div>
       <div className="grid lg:grid-cols-5 grid-cols-2 mt-10 gap-6 justify-center">
         {latestData.map((item, index) => {

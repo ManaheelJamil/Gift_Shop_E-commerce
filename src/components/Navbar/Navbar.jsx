@@ -1,12 +1,14 @@
-import { BsCart4 } from "react-icons/bs";
 import { CiSearch } from "react-icons/ci";
 import { useState } from "react";
 import LoginForm from "../../features/auth/LoginForm";
 import SignupForm from "../../features/auth/SignupForm";
 import ForgetPassword from "../../features/auth/forgetPassword";
 import { CgMenuRightAlt } from "react-icons/cg";
-
+import { useCart } from "../../context/CartContext";
+import { LiaShoppingCartSolid } from "react-icons/lia";
+import { Link } from "react-router-dom";
 function Navbar() {
+  const { cartItems } = useCart();
   const [loginOpen, setLoginOpen] = useState(false);
   const [signupOpen, setSignupOpen] = useState(false);
   const [forgetOpen, setForgetOpen] = useState(false);
@@ -60,17 +62,22 @@ function Navbar() {
         </div>
         <CgMenuRightAlt className="text-2xl lg:hidden block text-gray-900" />
 
-      <div className="lg:block hidden">
+        <div className="lg:block hidden">
           <div className="flex items-center  gap-10">
-          <BsCart4 className="text-3xl cursor-pointer text-[#444444]" />
-          <button
-            onClick={handleLoginOpen}
-            className="text-md   cursor-pointer bg-gray-900 text-white rounded-md w-28  text-center h-10"
-          >
-            Login
-          </button>
+             <Link to="/cart"><div className="w-8 h-5 relative">
+              <LiaShoppingCartSolid className="text-3xl cursor-pointer text-[#444444]" />
+             
+                <p className="absolute -top-3 right-0"> {cartItems.length}</p>
+            </div>
+              </Link>
+            <button
+              onClick={handleLoginOpen}
+              className="text-md   cursor-pointer bg-gray-900 text-white rounded-md w-28  text-center h-10"
+            >
+              Login
+            </button>
+          </div>
         </div>
-      </div>
       </div>
       {loginOpen && (
         <LoginForm

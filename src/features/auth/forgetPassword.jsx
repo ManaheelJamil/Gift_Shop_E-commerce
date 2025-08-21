@@ -7,14 +7,14 @@ function ForgetPassword({ onClose }) {
         <div className="px-8 py-5 w-96 bg-white rounded-md shadow-2xl">
           <RxCross2
             onClick={onClose}
-            className="float-right cursor-pointer text-3xl"
+            className="float-right cursor-pointer text-xl"
           />
           <img
-            src="/assets/logo.png"
+            src="/assets/mainlogo2.png"
             alt="logo"
             width={100}
             height={50}
-            className="rounded-xl mx-auto mt-10 h-28 w-28"
+            className="rounded-xl mx-auto shadow-xl mt-10 h-28 w-28"
           />
           <h1 className="text-xl text-center my-3">Forget Your Password?</h1>
           

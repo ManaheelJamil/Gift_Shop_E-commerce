@@ -7,13 +7,49 @@ import Category from "../../components/Category/category";
 import Unique from "../../components/Unique/unique";
 import TopRatedItems from "../../components/TopRatedItems/topRatedItems";
 import { getAllProducts } from "../../services/productServices";
+const categories = [
+  {
+    id: "00",
+    category: "All Products",
+  },
+  {
+    id: "01",
+    category: "Jewelary",
+  },
+  {
+    id: "02",
+    category: "Decorator",
+  },
+  {
+    id: "03",
+    category: "HeadPhones",
+  },
+  {
+    id: "04",
+    category: "Home Appliances",
+  },
+  {
+    id: "05",
+    category: "Hand Watches",
+  },
+  {
+    id: "06",
+    category: "Men's Wallet",
+  },
+];
+
 function Home() {
   const products = getAllProducts();
+  const [selectedCategory, setSelectedCategory] = useState("");
   const [open, setOpen] = useState(false);
   const [sortOption, setSortOption] = useState("Best Match");
 
   const handleOpen = () => {
     setOpen(!open);
+  };
+
+  const handleCategoryClick = (category) => {
+    setSelectedCategory(category.id);
   };
 
   const sortedProducts = [...products].sort((a, b) => {
@@ -28,13 +64,15 @@ function Home() {
     }
     if (sortOption === "Oldest First") {
       return new Date(a.createdAt) - new Date(b.createdAt);
-    }
+    }a
     return 0;
   });
 
+
   return (
     <div className="lg:w-[1250px]  mx-5 lg:mx-auto">
-      <div className="sticky lg:block hidden top-24 border-2 border-x-transparent  border-t-transparent border-b-[#444444] bg-white z-40  left-0 right-0 ">
+
+      <div className="sticky lg:block hidden top-24 border-2 border-x-transparent  border-t-transparent border-b-[#444444] bg-white z-30  left-0 right-0 ">
         <div className=" justify-end relative  w-[500px]   py-5 flex items-center gap-5">
           <button
             onClick={handleOpen}
@@ -73,58 +111,28 @@ function Home() {
         </div>
       </div>
       <div className="mb-20 mt-">
-        <div className="flex mt-10 relative gap-10">
+        <div className="flex mt-5 relative gap-10">
           <div className="w-64 sticky top-52   h-screen bg-white lg:block hidden ">
-            <h1 className="text-xl hover:bg-[#C8E6C9]  p-8 rounded-t-xl border border-[#444444] text-center text-[#444444]">All Products</h1>
-            <div className="w-full hover:bg-[#C8E6C9] border p-7 text-[#444444] text-lg  text-center border-[#444444]">
-              <select
-                // value={sortOption}
-                // onChange={(e) => setSortOption(e.target.value)}
-                className="outline-none cursor-pointer  "
+            {categories.map((item, index) => (
+              <h1
+                key={index}
+                onClick={() => handleCategoryClick(item)}
+                className={`text-md p-4 cursor-pointer border border-[#444444] text-center text-[#444444] hover:bg-[#C8E6C9] ${
+                  selectedCategory === item.id ? "bg-[#C8E6C9]" : ""
+                }`}
               >
-                <option >Men's Collections</option>
-                <option >Highest Price</option>
-                <option >Lowest Price</option>
-                <option >Newest First </option>
-                <option >Oldest First </option>
-              </select>{" "}
-            </div>
-            <div className="w-full hover:bg-[#C8E6C9] border p-7 text-[#444444] text-lg  text-center border-[#444444]">
-              <select
-                // value={sortOption}
-                // onChange={(e) => setSortOption(e.target.value)}
-                className="outline-none cursor-pointer  "
-              >
-                <option>Women's Collection</option>
-                <option>Highest Price</option>
-                <option>Lowest Price</option>
-                <option>Newest First </option>
-                <option>Oldest First </option>
-              </select>{" "}
-            </div>
-            <div className="w-full hover:bg-[#C8E6C9] border p-7 text-[#444444] text-lg  text-center border-[#444444]">
-              <select
-                // value={sortOption}
-                // onChange={(e) => setSortOption(e.target.value)}
-                className="outline-none cursor-pointer  "
-              >
-                <option>Girl's Collection</option>
-                <option>Highest Price</option>
-                <option>Lowest Price</option>
-                <option>Newest First </option>
-                <option>Oldest First </option>
-              </select>{" "}
-            </div>
+                {item.category}
+              </h1>
+            ))}
           </div>
           <div className=" w-full">
-          <Cart onSort={sortedProducts} />
+            <Cart onSort={sortedProducts} onCategorized={selectedCategory}/>
           </div>
         </div>
-        
       </div>
-       <Category />
-        <Unique />
-        <TopRatedItems/>  
+      <Category />
+      <Unique />
+      <TopRatedItems />
     </div>
   );
 }

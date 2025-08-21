@@ -5,6 +5,11 @@
     "name": "Elegant Diamond Necklace",
     "price": "12000",
     "categoryId": "01",
+    "description": "A timeless diamond necklace designed with elegance, perfect for weddings and special occasions. It sparkles with finely cut diamonds set in 18k gold. The craftsmanship ensures durability and luxury combined. Ideal for formal gatherings and bridal wear. A must-have for anyone who loves premium jewelry.",
+    "brand": "Shah Jewels",
+    "material": "18k Gold, Diamonds",
+    "stock": 12,
+    "tags": ["Necklace", "Diamond", "Jewelry", "Luxury"],
     "createdAt": "2025-08-15T09:30:00Z",
     "updatedAt": "2025-08-15T15:20:00Z",
     "reviews": [
@@ -18,6 +23,11 @@
     "name": "Luxury Gold Earrings",
     "price": "8000",
     "categoryId": "01",
+    "description": "Premium gold earrings with a stylish finish, suitable for daily wear and festive occasions. They are crafted from pure 22k gold for lasting shine. Lightweight and comfortable for long hours of wear. A versatile accessory for both modern and traditional outfits. Perfect for gifting your loved ones.",
+    "brand": "Royal Gems",
+    "material": "22k Gold",
+    "stock": 25,
+    "tags": ["Earrings", "Gold", "Jewelry"],
     "createdAt": "2025-08-14T11:10:00Z",
     "updatedAt": "2025-08-14T18:00:00Z",
     "reviews": [
@@ -31,6 +41,11 @@
     "name": "Pearl Bracelet Set",
     "price": "6500",
     "categoryId": "01",
+    "description": "Handcrafted pearl bracelet set with a luxurious touch, ideal for evening events. The natural pearls give it an elegant charm. Adjustable design makes it suitable for all wrist sizes. Lightweight yet durable for daily use. A timeless accessory for pearl lovers.",
+    "brand": "Ocean Pearls",
+    "material": "Natural Pearls",
+    "stock": 18,
+    "tags": ["Bracelet", "Pearl", "Jewelry"],
     "createdAt": "2025-08-13T14:00:00Z",
     "updatedAt": "2025-08-13T19:45:00Z",
     "reviews": [
@@ -44,6 +59,11 @@
     "name": "Crystal Vase",
     "price": "5000",
     "categoryId": "02",
+    "description": "Elegant crystal vase that enhances home décor with a modern touch. Its transparent finish makes it perfect for fresh flowers. Durable crystal ensures long-lasting shine. Adds sophistication to living or dining rooms. A great gift for décor lovers.",
+    "brand": "DecoLux",
+    "material": "Pure Crystal",
+    "stock": 30,
+    "tags": ["Vase", "Crystal", "Home Decor"],
     "createdAt": "2025-08-12T10:20:00Z",
     "updatedAt": "2025-08-12T14:30:00Z",
     "reviews": [
@@ -57,6 +77,11 @@
     "name": "Wooden Wall Clock",
     "price": "3500",
     "categoryId": "02",
+    "description": "Handcrafted wooden wall clock with rustic finish, perfect for vintage interiors. The wood grains add a natural touch to your wall. Runs smoothly with silent movement technology. Easy to hang and lightweight. A perfect blend of utility and design.",
+    "brand": "TimeCraft",
+    "material": "Wood",
+    "stock": 20,
+    "tags": ["Wall Clock", "Wood", "Home Decor"],
     "createdAt": "2025-08-11T12:50:00Z",
     "updatedAt": "2025-08-11T18:20:00Z",
     "reviews": [
@@ -70,6 +95,11 @@
     "name": "Handmade Decorative Lamp",
     "price": "4500",
     "categoryId": "02",
+    "description": "A stylish handmade lamp that adds warmth and light to any room. Designed with natural wood and fine fabric for elegance. Provides soft ambient lighting for cozy evenings. Perfect for living rooms, bedrooms, or study areas. A beautiful decorative and functional piece.",
+    "brand": "LightArt",
+    "material": "Wood, Fabric",
+    "stock": 15,
+    "tags": ["Lamp", "Handmade", "Home Decor"],
     "createdAt": "2025-08-10T15:40:00Z",
     "updatedAt": "2025-08-10T19:30:00Z",
     "reviews": [
@@ -83,6 +113,11 @@
     "name": "Wireless Bluetooth Headphones",
     "price": "7500",
     "categoryId": "03",
+    "description": "High-quality wireless headphones with deep bass and noise isolation. Designed for music lovers and gamers. Provides up to 20 hours of battery life. Lightweight design ensures comfort for long sessions. A perfect balance of performance and style.",
+    "brand": "SoundMax",
+    "material": "Plastic, Foam",
+    "stock": 40,
+    "tags": ["Headphones", "Bluetooth", "Wireless", "Electronics"],
     "createdAt": "2025-08-09T09:00:00Z",
     "updatedAt": "2025-08-09T12:40:00Z",
     "reviews": [
@@ -96,6 +131,11 @@
     "name": "Noise Cancelling Earbuds",
     "price": "5000",
     "categoryId": "03",
+    "description": "Compact earbuds with active noise cancellation and long battery life. Designed for daily use and travel. Comes with a charging case for extra power. Comfortable fit ensures secure wear. Ideal for music, calls, and podcasts.",
+    "brand": "BeatPods",
+    "material": "Plastic",
+    "stock": 55,
+    "tags": ["Earbuds", "Noise Cancelling", "Wireless", "Electronics"],
     "createdAt": "2025-08-08T10:15:00Z",
     "updatedAt": "2025-08-08T13:30:00Z",
     "reviews": [
@@ -109,6 +149,11 @@
     "name": "Over-Ear Studio Headphones",
     "price": "9500",
     "categoryId": "03",
+    "description": "Professional-grade over-ear headphones for music mixing and studio use. Delivers high-definition sound clarity. Cushioned ear pads for long-hour comfort. Durable build for professional setups. A must-have for DJs and audio engineers.",
+    "brand": "ProAudio",
+    "material": "Plastic, Leather",
+    "stock": 25,
+    "tags": ["Headphones", "Studio", "Over-Ear"],
     "createdAt": "2025-08-07T11:20:00Z",
     "updatedAt": "2025-08-07T15:10:00Z",
     "reviews": [
@@ -122,6 +167,11 @@
     "name": "Automatic Coffee Maker",
     "price": "6500",
     "categoryId": "04",
+    "description": "Automatic coffee maker with fast brewing technology for a perfect cup every time. Easy to use with one-touch operation. Designed with stainless steel for durability. Compact design fits in any kitchen space. Great for daily coffee lovers.",
+    "brand": "BrewMaster",
+    "material": "Stainless Steel, Plastic",
+    "stock": 22,
+    "tags": ["Coffee Maker", "Appliance", "Kitchen"],
     "createdAt": "2025-08-06T08:40:00Z",
     "updatedAt": "2025-08-06T11:30:00Z",
     "reviews": [
@@ -135,6 +185,11 @@
     "name": "Smart LED TV 55-inch",
     "price": "45000",
     "categoryId": "04",
+    "description": "Ultra HD Smart LED TV with built-in apps and seamless streaming. Crisp visuals for movies, shows, and gaming. Modern slim design fits any living room. Comes with multiple connectivity options. Delivers immersive sound with rich bass.",
+    "brand": "ViewPlus",
+    "material": "LED Panel, Plastic",
+    "stock": 10,
+    "tags": ["TV", "Smart TV", "Electronics"],
     "createdAt": "2025-08-05T09:30:00Z",
     "updatedAt": "2025-08-05T12:15:00Z",
     "reviews": [
@@ -148,6 +203,11 @@
     "name": "Air Fryer Pro",
     "price": "9000",
     "categoryId": "04",
+    "description": "Healthy cooking with Air Fryer Pro, perfect for crispy snacks without oil. Uses rapid air technology for quick meals. Easy to clean with removable basket. Compact and energy-efficient design. A great choice for health-conscious families.",
+    "brand": "CookMate",
+    "material": "Plastic, Metal",
+    "stock": 28,
+    "tags": ["Air Fryer", "Kitchen Appliance", "Healthy Cooking"],
     "createdAt": "2025-08-04T13:00:00Z",
     "updatedAt": "2025-08-04T17:20:00Z",
     "reviews": [
@@ -161,6 +221,11 @@
     "name": "Luxury Men's Watch",
     "price": "15000",
     "categoryId": "05",
+    "description": "Luxury wristwatch with stainless steel build and water resistance up to 50m. Designed for formal and casual wear. Scratch-resistant glass for lasting shine. Elegant dial with precise timekeeping. A timeless gift for men.",
+    "brand": "EliteTime",
+    "material": "Stainless Steel",
+    "stock": 15,
+    "tags": ["Watch", "Luxury", "Men's Accessories"],
     "createdAt": "2025-08-03T07:20:00Z",
     "updatedAt": "2025-08-03T12:35:00Z",
     "reviews": [
@@ -174,6 +239,11 @@
     "name": "Minimalist Women's Watch",
     "price": "12000",
     "categoryId": "05",
+    "description": "Elegant women's watch with a slim design and leather strap. Lightweight and comfortable for everyday use. Matches perfectly with modern outfits. Water-resistant for daily convenience. A simple yet stylish accessory.",
+    "brand": "FemmeStyle",
+    "material": "Leather, Stainless Steel",
+    "stock": 20,
+    "tags": ["Watch", "Minimal", "Women's Accessories"],
     "createdAt": "2025-08-02T14:15:00Z",
     "updatedAt": "2025-08-02T17:30:00Z",
     "reviews": [
@@ -187,6 +257,11 @@
     "name": "Sport Digital Watch",
     "price": "8000",
     "categoryId": "05",
+    "description": "Durable digital sports watch with waterproof functionality. Designed for athletes and active lifestyles. Lightweight and shock-resistant. Easy-to-read digital display. A reliable partner for outdoor adventures.",
+    "brand": "SportTime",
+    "material": "Rubber, Plastic",
+    "stock": 35,
+    "tags": ["Watch", "Sport", "Digital"],
     "createdAt": "2025-08-01T09:50:00Z",
     "updatedAt": "2025-08-01T13:10:00Z",
     "reviews": [
@@ -200,6 +275,11 @@
     "name": "Smart Fitness Watch",
     "price": "10000",
     "categoryId": "05",
+    "description": "Smart fitness tracker watch with heart-rate monitoring and notifications. Syncs easily with smartphones. Tracks steps, sleep, and calories. Stylish design suitable for daily use. Perfect for fitness enthusiasts.",
+    "brand": "FitTech",
+    "material": "Rubber, Glass",
+    "stock": 27,
+    "tags": ["Smartwatch", "Fitness", "Electronics"],
     "createdAt": "2025-07-31T10:00:00Z",
     "updatedAt": "2025-07-31T15:45:00Z",
     "reviews": [
@@ -213,50 +293,16 @@
     "name": "Genuine Leather Wallet",
     "price": "3000",
     "categoryId": "06",
+    "description": "Premium leather wallet with multiple card slots and sleek design. Crafted from soft leather for long-lasting use. Compact size fits easily in pockets. Classic design suits formal and casual looks. A perfect everyday accessory.",
+    "brand": "LeatherCraft",
+    "material": "Pure Leather",
+    "stock": 50,
+    "tags": ["Wallet", "Leather", "Men's Accessories"],
     "createdAt": "2025-07-30T09:20:00Z",
     "updatedAt": "2025-07-30T13:40:00Z",
     "reviews": [
       { "user": "Zoe Perry", "rating": 5, "comment": "Soft leather, high quality." },
       { "user": "Caleb Howard", "rating": 4, "comment": "Plenty of card slots." }
-    ]
-  },
-  {
-    "id": "18",
-    "image": "/assets/men-wallet.webp",
-    "name": "Slim Card Holder Wallet",
-    "price": "2000",
-    "categoryId": "06",
-    "createdAt": "2025-07-29T11:30:00Z",
-    "updatedAt": "2025-07-29T16:10:00Z",
-    "reviews": [
-      { "user": "Zayan Qureshi", "rating": 5, "comment": "Minimal and sleek." },
-      { "user": "Elena Sheikh", "rating": 4, "comment": "Compact but useful." }
-    ]
-  },
-  {
-    "id": "19",
-    "image": "/assets/men-wallet.webp",
-    "name": "Brown Leather Bifold Wallet",
-    "price": "2500",
-    "categoryId": "06",
-    "createdAt": "2025-07-28T12:00:00Z",
-    "updatedAt": "2025-07-28T18:20:00Z",
-    "reviews": [
-      { "user": "Hamza Tariq", "rating": 5, "comment": "Classic design, durable." },
-      { "user": "Saira Ali", "rating": 4, "comment": "Bought for my brother, he loved it." }
-    ]
-  },
-  {
-    "id": "20",
-    "image": "/assets/men-wallet.webp",
-    "name": "Black Premium Wallet",
-    "price": "3500",
-    "categoryId": "06",
-    "createdAt": "2025-07-27T09:40:00Z",
-    "updatedAt": "2025-07-27T14:30:00Z",
-    "reviews": [
-      { "user": "Umar Farooq", "rating": 5, "comment": "Premium feel and stylish." },
-      { "user": "Iqbal Niazi", "rating": 4, "comment": "Spacious and elegant." }
     ]
   }
 ]

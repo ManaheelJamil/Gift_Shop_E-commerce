@@ -35,7 +35,7 @@ function Cart({ onSort, onCategorized }) {
                   onClick={() => addToCart(item)}
                   className="bg-[#444444] bottom-3 absolute left-3 right-3 cursor-pointer lg:p-2 p-1 text-center rounded-sm lg:rounded-md mt-3 text-sm lg:text-lg text-white"
                 >
-                  Add
+                  Add to Cart
                 </button>
               </div>
             );

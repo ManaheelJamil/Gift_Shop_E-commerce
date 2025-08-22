@@ -65,11 +65,12 @@ function ProductDetails() {
                 <FaMinus />
               </button>
             </div>
-              <button className="bg-[#444444] cursor-pointer  p-2 shadow-md w-40 rounded-md text-white">
-            <Link to="/cart">
-                Order Now{" "}
-            </Link>
-              </button>
+            <button
+              onClick={() => addToCart(product, count)}
+              className="bg-[#444444] cursor-pointer  p-2 shadow-md w-40 rounded-md text-white"
+            >
+              <Link to="/cart">Order Now </Link>
+            </button>
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { IoGridSharp } from "react-icons/io5";
 import { FaFilter } from "react-icons/fa";
 import { LuArrowDownUp } from "react-icons/lu";
-import Cart from "../../components/Cart/cart";
+import Cart from "../../components/Card/card";
 import Category from "../../components/Category/category";
 import Unique from "../../components/Unique/unique";
 import TopRatedItems from "../../components/TopRatedItems/topRatedItems";
